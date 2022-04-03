@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://192.168.29.101:5500/contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT PAGE</title>
+
+<style>
+    body{
+        background-image: url(contact.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+       
+        color: white;
+    }
+#cntc{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    display: block;
+    width: 15%;
+    margin: 15px auto;
+    font-weight: bold;
+    padding: 7px 0px 7px 10px;
+
+}
+#ct1{
+    padding-left: 600px;
+    text-decoration: underline;
+}
+.ct2{ position: absolute;
+    left: 7px;
+    display: inline-block;
+width: 35%;
+height: 80px;
+margin-top: 5px;
+background-image: url(contact1.jpg);
+height: 160px;
+}
+#cnt2{
+    text-decoration: underline ;
+    padding: 9px;
+    font-size: larger;
+}
+a:hover{
+    color: rgb(22, 36, 161);
+}
+a:visited{
+    color: red;
+}
+.frm{ border: 1px solid rgb(228, 70, 70);
+    padding-left: 15px;
+    padding-bottom: 10PX;
+}
+.contact{display: inline-block;
+    border: 2px solid rgb(189, 85, 85);
+    position: absolute;
+    left: 12px;
+    margin-top: 10px;
+    background-image: url(contact1.jpg);
+    padding-left: 10px;
+
+}
+.contact2{display: block;
+    width: 20%;
+    margin: 10px auto;
+    border: 2px solid rgb(189, 85, 85);
+    background-image: url(contact1.jpg);
+    height: 134px;
+    padding-left: 10px;
+}
+#container{
+    position: absolute;
+    right: 34px;
+    float: left;
+    display: inline-block;
+    border: 2px solid rgb(189, 85, 85);
+    background-image: url(contact1.jpg);
+    height: 135px;
+    padding-left: 10px;
+}
+#address{position: absolute;
+    right: 12px;
+
+}
+#form{
+    border: 2px;
+}
+.con1{
+    display: inline-block;
+    border: 3px solid red;
+    background-color: rgb(231, 162, 122);
+    width: 450px;
+    height: 140px;
+    margin: 5px 20px;
+}
+#box2{
+    position: relative;
+    bottom: 16px;
+    text-align: center;
+}
+#box3{
+    text-align: center;
+}
+#box1{
+    text-align: center;
+}
+
+</style></head>
+
+<body>
+<p id="cntc"> Contact Us </p>
+<p id="ct1">For any further informatiom or queries,kindly contact us:-</p>
+<div class="frm">
+    <h3> For your queries,kindly fill the form below:-</h3>
+    <form action="http://192.168.29.101:5500/backend.php">
+        <div id="form">
+        Name:<br><input type="text" id="name"> 
+        <div> <br>
+        Email:<br><input type="email" name="" id=""></div>
+        <div> <br>
+        Mobile No.<br><input type="text"></div> <br>
+       Your Query:- <br> <textarea name="" id="" cols="30" rows="10"></textarea><br>
+       <button>SUBMIT</button>
+    </div>
+    </form>
+    </div>
+    <div class="con1" id="box1">
+        <h2>Our Contact Details:-</h2>
+    <p>Contact No. :- 8279229881</p>
+    <p>Email Address:- itsmaheshyadav2106@gmail.com</p>
+
+</div>
+        <div class="con1" id="box2">
+          <h2>Address:-</h2> Rustampur,Gorakhpur,<br>Uttar Pradesh ,273016, India </div>
+          
+            <div class="con1" id="box3">
+<h2>Our Social-Media Pages:- </h2>
+<a href="https://www.facebook.com/" target="_blank" class="txt1">Our Facebook Page</a><br>
+<a href="https://www.twitter.com/" target="_blank" class="txt1">Our Twitter Page</a><br>
+<a href="https://www.instagram.com/" target="_blank" class="txt1">Our Instagram Page</a>
+       </div>     
+
+    
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+    
+    
+<!-- Code inject--></body></html>
